@@ -117,3 +117,12 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.mypattern .slick-slide:not(.slick-center) {
+  -webkit-filter: opacity(60%);
+  -moz-filter: opacity(60%);
+  -o-filter: opacity(60%);
+  -ms-filter: opacity(60%);
+  filter: opacity(60%);
+  transition: 0.2s linear;
+}
