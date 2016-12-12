@@ -1,0 +1,16 @@
+@charset "utf-8";
+/**
+ * @version 1.1.0
+ * @charset utf-8
+ * @lastupdate 2014/03/14
+ *
+ */
+
+#container.top #shareSns {top:630px;}
+#mainVisual {min-height: 840px;}
+#mainVisual .twitter-voice {top:620px;}
+
+div.recipe_attention {padding: 5px 5px 5px 40px; background: url(/common/images/park_logo_s_gr.png) no-repeat 10px 6px #f4f4f4;}
+div.recipe_attention p {line-height: 1.1em;}
+
+#elementContents li.material {top: 480px;}

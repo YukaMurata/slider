@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="Shift-JIS">
+<meta name="viewport" content="width=device-width, initial-scale=1 ,minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>slider_sp</title>
+<!--{$view->renderElement("/spn/meta")}-->
+<link rel="stylesheet" type="text/css" href="/spn/css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="/spn/css/slick.css">
+<link rel="stylesheet" type="text/css" href="/spn/css/common.css">
+<link rel="stylesheet" type="text/css" href="/spn/css/local.css">
+<script type="text/javascript" src="/spn/js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<!--{* class属性にページカテゴリ名を入力 *}-->
+<div id="container" class="top">
+	<!--{$view->renderElement("/spn/header")}-->
+	<div class="main-contents">
+		<!-- intro -->
+
+		<!-- slider -->
+		<div class="slider_wrapper" style="display: block;"><div class="slider_inner">
+			<div class="slider">
+				<div><div class="slide"><a href="/spn/products/"><img src="/spn/images/img1.jpg" alt="" width="100%"></a></div></div>
+				<div><div class="slide"><a href="/spn/tvcm/"><img src="/spn/images/img2.jpg" alt="" width="100%"></a></div></div>
+				<div><div class="slide"><a href="/spn/fun/caffeine-zero/"><img src="/spn/images/img3.jpg" alt="" width="100%"></a></div></div>
+			</div>
+		</div></div>
+		<!--{$view->renderElement("/spn/sns")}-->
+	</div>
+
+	<!--{$view->renderElement("/spn/footer")}-->
+
+<script type="text/javascript" src="/spn/js/slick.min.js"></script>
+<script>
+$(function(){
+	$('.slider').slick({
+		// 自動再生。trueで自動再生される。
+		autoplay: true,
+		// 自動再生で切り替えをする時間
+		autoplaySpeed: 3000,
+		// 自動再生や左右の矢印でスライドするスピード
+		speed: 800,
+        dots:true,
+		// 自動再生時にスライドのエリアにマウスオンで一時停止するかどうか
+		pauseOnHover: false,
+		easing: 'easeOutQuad'
+	});
+});
+</script>
+
+</div><!-- /#container -->
+</body>
+</html>
